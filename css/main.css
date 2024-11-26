@@ -1,0 +1,262 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #201b2d;
+    font-size: 15px;
+    padding: 0;
+    margin: 0;
+}
+
+div, p, input, button, form, span, a, ul, li {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 900;
+}
+
+p {
+    line-height: 1.65em;
+}
+
+.header {
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(125,125,250,1) 0%, rgba(0,234,254,1) 100%);
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.container {
+    width: 1024px;
+    margin: 0 auto;
+}
+
+.wrapper-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.logo {
+    position: relative;
+    top: 40px;
+}
+
+.offer {
+    width: 700px;
+}
+
+.offer__title {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 40px;
+    margin-bottom: 20px;
+}
+
+.offer__span {
+    text-transform: uppercase;
+    font-size: 48px;
+    font-weight: 700;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.offer__text {
+    font-size: 16px;
+}
+
+.btm {
+    display: block;
+    width: 200px;
+    height: 55px;
+    background-color: yellow;
+    font-weight: bold;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.mainPart {
+    width: 1024px;
+    margin: 0 auto;
+    padding-bottom: 100px;
+}
+
+.mainPart_question {
+    display: flex;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Ubuntu', sans-serif;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+.mainPart_blocks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Ubuntu', sans-serif;
+    gap: 20px;
+}
+
+.mainPart_block {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainPart_block p {
+    text-align: center;
+}
+
+.block_img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 5px;
+}
+
+.form {
+    width: 1024px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+
+.form_h2 {
+    display: flex;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Ubuntu', sans-serif;
+    padding-bottom: 40px;
+    font-size: 1.5em;
+}
+
+.form_form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form_input {
+    align-items: center;
+    justify-content: center;
+    color: gray;
+    width: 370px;
+    height: 50px;
+    margin-bottom: 30px;
+    border-color: gray;
+    border-width: 1px;
+    padding-left: 30px;
+}
+
+.form_button {
+    display: block;
+    width: 400px;
+    height: 50px;
+    background-color: gold;
+    font-family: 'Ubuntu', sans-serif;
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+    border-color: gray;
+    border-width: 1px;
+}
+
+.footer {
+    display: flex;
+    background: rgb(2,0,36);
+    background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(0,212,255,1) 0%, rgba(22,110,199,1) 49%);
+    height: 100px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer_p {
+    font-size: 12px;
+    color: white;
+}
+
+/* Медиа-запросы для адаптивности */
+
+@media (max-width: 1199px) {
+    .container {
+        width: 90%;
+    }
+
+    .offer {
+        width: 100%;
+    }
+
+    .mainPart_blocks {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .mainPart_block {
+        width: 45%; /* Две колонки */
+        padding-right: 0;
+        padding-bottom: 20px;
+    }
+
+    .form_input {
+        width: 90%; /* Ширина ввода */
+    }
+}
+
+@media (max-width: 991px) {
+    .container {
+        width: 80%;
+    }
+
+    .mainPart_blocks {
+        flex-direction: column; /* Одна колонка */
+    }
+
+    .mainPart_block {
+        width: 100%; /* Полная ширина */
+        padding: 0;
+    }
+    .form { 
+        width: 100%;
+    }
+    .wrapper-inner {
+        flex-direction: column;
+    }
+
+    .form_input {
+        width: 90%; /* Ширина ввода */
+        height: 40px; /* Меньше высота */
+    }
+
+    .form_button {
+        width: 90%; /* Ширина кнопки */
+    }
+
+    .offer__title {
+        font-size: 24px; /* Меньше заголовок */
+    }
+
+    .offer__text {
+        font-size: 14px; /* Меньше текст */
+    }
+}
+
+
+input:invalid {
+	box-shadow: 0 0 5px 1px red;
+}
+
+input:focus:invalid {
+	box-shadow: none;
+}

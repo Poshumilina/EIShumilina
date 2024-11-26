@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cool Company</title>
+    <link rel="stylesheet" href="css/main.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <img class="logo" src="img/logo.png" alt="logo">
+            <div class="wrapper-inner">
+                <div class="offer">
+                    <h1 class="offer__title">С помощью нас вы сможете создать то, о чем</h1>
+                    <span class="offer__span">Желаете!</span>
+                    <p class="offer__text">Наши возможности + опыт позволят Вам достить огромного успеха. Мы верим в вас! И знаем на все 100%. Вас не остановить!</p>
+                    <a id="blk" href="#" class="btm">Узнать больше...</a>
+                </div>
+                <img class="img1" id="img1" src="img/header-img.png" alt="pcture">
+            </div>
+        </div>
+    </header>
+    <div class="mainPart" >
+        <div class="mainPart_question">
+            <h2 class="question_h2">Что Вам необходимо?</h2>
+        </div>
+        <div class="mainPart_blocks">
+            <div class="mainPart_block1" id="blk">
+                <img class="block_img" src="img/f3.png" alt="f3">
+                <h3 class="block_h3">Первый блок</h3>
+                <p class="block_p">Съешь ещё этих мягких французских булок, да выпей чаю</p>
+            </div>
+            <div class="mainPart_block2" id="blk">
+                <img class="block_img" src="img/f4.png" alt="f5">
+                <h3 class="block_h3">Второй блок</h3>
+                <p class="block_p">Быстрая, весёлая лиса прыгнула через озеро к зелёному кусту</p>
+            </div>
+            <div class="mainPart_block3" id="blk">
+                <img class="block_img" src="img/f5.png" alt="f5">
+                <h3 class="block_h3">Третий блок</h3>
+                <p class="block_p">Фальшивый джазовый квартет в уютном кафе забыл о мизантропии</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="form">
+        <div class="form_h2">
+            <h2>Форма заказа продукта или услуги</h2>
+        </div>
+        <form class="form_form">
+            <input onblur="checkName();" type="text" id="name" name="name" placeholder="Имя" class="form_input">
+            <input onblur="checkEmail();" type="email" id="email" name="e-mail" placeholder="Введите свой E-mail" class="form_input">
+            <input onblur="checkPhone();" type="tel" id="telephone" name="telephone" placeholder="Телефон" class="form_input">
+            <input type="number" id="num" name="num" placeholder="Колличество"  class="form_input">
+            <select name="delivery" id="delivery" class="form_input" required>
+                <option value="">Выберите метод доставки</option>
+                <option value="Стандартная">Стандартная доставка</option>
+                <option value="Экспресс">Экспресс</option>
+                <option value="Самовывоз">Самовывоз</option>
+            </select>
+            <br><br>
+            <button onclick="checkAll()" class="form_button">Заказать!</button>
+        </form>
+    </div>
+
+    <div class="form">
+        <div class="form_h2">
+            <h2>Форма заказа обратного звонка</h2>
+        </div>
+        <form action="#" class="form_form">
+            <input type="text" id="name" name="name" placeholder="Имя" class="form_input" required>
+            <input type="email" id="e-mail" name="e-mail" placeholder="Введите свой E-mail" class="form_input" required>
+            <input type="tel" id="telephone" name="telephone" placeholder="Телефон" class="form_input" required pattern="[0-9]{11}">
+            <input type="text" id="theme" name="theme" placeholder="Какая тема вас интересует" required  class="form_input">
+            <input type="submit" value="Отправить вопрос!" class="form_button">
+        </form>
+    </div>
+    <footer class="footer">
+        <p class="footer_p">
+            © Все на этом сайте защищено
+        </p>
+    </footer>
+</body>
+</html>
